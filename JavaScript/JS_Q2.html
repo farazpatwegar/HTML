@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+    <script>
+        function chk(){
+            var n = parseInt(document.getElementById("num").value);
+            var mg = document.getElementById("msg").value;
+            while(n!=0){
+                document.getElementById("mydiv").innerHTML+=mg+"<br>";
+                n--;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form style="background-color: #C7C8CC;">
+        <table>
+            <tr>
+                <td>
+                    Enter The Number :
+                </td>
+                <td>
+                    <input type="text" id="num" name="num" placeholder="Number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter The Massege :
+                </td>
+                <td>
+                    <input type="text" id="msg" name="msg" placeholder="Massege">
+                </td>
+            </tr>
+            <tr>
+                <td><button type="button" id="btn" name="btn" value="chk" onclick="chk()">Print</button></td>        
+            </tr>
+        </table>
+        <div id="mydiv"></div>
+    </form>
+</body>
+</html>
