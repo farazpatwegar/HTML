@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sumofalldig(){
+            var n = parseInt(document.getElementById("num").value);
+            var dig=0;
+            var sum = 0;
+            while(n>0){
+                dig  = n % 10;
+                sum = sum +dig;
+                n=parseInt(n/10);
+            }
+            document.getElementById("mydiv").innerHTML="Sum of all Digit = "+sum;
+        }
+    </script>
+</head>
+<body>
+    <form style="background-color: #C7C8CC;">
+        <table>
+            <tr>
+                <td>
+                    Enter The Number :
+                </td>
+                <td>
+                    <input type="text" id="num" name="num" placeholder="Number">
+                </td>
+            </tr>
+            <tr>
+                <td><button type="button" id="btn" name="btn" value="chk" onclick="sumofalldig()">Sumofall dig</button></td>        
+            </tr>
+        </table>
+        <div id="mydiv"></div>
+</body>
+</html>
