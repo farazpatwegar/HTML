@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information form</title>
+    <style>
+
+        table{
+            border-collapse: collapse;
+
+        }
+        #Add1{
+            overflow-y: scroll;
+            overflow-x:scroll;
+        }
+        
+        
+    </style>
+</head>
+<body>
+<div>
+    <table border="1px" style="background-color: #F4C2C2;" >
+    <form method="post">
+        <tr>
+            <td><label for="nm">Name:</label> </td>
+            <td> <input type="text" name="name" id="nm" placeholder="Enter name" minlength="3" maxlength="200" required autofocus >
+                <span style="color: red;">*</span></td>
+        </tr>
+        
+        <tr>
+            <td><label for="num"> Employee Code:</label></td>
+            <td> <input type="number" id="num"></td>
+        </tr>
+
+        <tr>
+            <td> Department: </td>
+            <td><input type="radio" name="dept" id="Admin" value="Admin"><label for="Admin">Admin</label> 
+
+            <br>
+     
+            <input type="radio" name="dept" id="HR" value="HR"><label for="HR">HR</label> 
+
+            <br>
+
+            <input type="radio" name="dept" id="Technical" value="Technical"><label for="Technical">Technical</label> 
+
+            <br>
+
+            <input type="radio" name="dept" id="Accounts" value="Accounts"><label for="Accounts">Accounts</label> 
+
+        </td>   
+        </tr>
+
+        <tr>
+            <td>Date of Joining:</td>
+            <td><input type="date" id="date"></td>
+        </tr>
+        <tr>
+            <td><label for="Add1">Address:</label> </td>
+            <td >
+                <textarea name="address" id="Add1"  >
+
+                </textarea>
+                
+            </td>
+        </tr>
+
+        <tr>
+            <td>Training Programs Attended</td>
+            <td>
+                <input type="checkbox" name="TPR" id="HTML/DHTML" value="HTML/DHTML"><label for="HTML/DHTML">HTML/DHTML</label> 
+
+                <br>
+                <input type="checkbox" name="TPR" id="Java" value="JAVA"><label for="Java">JAVA</label> 
+                <br>
+
+                <input type="checkbox" name="TPR" id="CLIENT/SERVER" value="CLIENT/SERVER"><label for="CLIENT/SERVER">CLIENT/SERVER</label> 
+                <br>
+                <input type="checkbox" name=".NET" id=".NET" value=".NET"><label for=".NET">.NET</label> 
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Training Programmes need to attend</td>
+            <td>
+                <select name="City" id="City">
+                    <option value="Javascript">Javascript</option>
+                    <option value="Python">Python</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="React">React</option>
+                    <option value="AI">AI</option>
+                </select>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Send the information at</td>
+            <td>
+                <a href="https://www.google.com/">empinfo@patni.com</a>
+            </td>
+        </tr>
+        <tr>
+            <button type="submit" name="btn" id="submit">Submit</button>
+        </tr>
+       
+        
+
+        
+    </form>
+</table>
+</div>
+</body>
+</html>
